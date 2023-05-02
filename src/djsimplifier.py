@@ -26,7 +26,7 @@ class Djsimplifer:
                 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                     ydl.download([url])
             except:
-                raise (f"error with: {url}")
+                raise Exception(f"error with: {url}")
 
     def check_dependencies(self) -> bool:
         ...
