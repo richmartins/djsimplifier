@@ -17,11 +17,3 @@ if __name__ == "__main__":
 
     widget.show()
     sys.exit(app.exec())
-
-"""
-for song in $(cat list.txt); do
-	youtube-dl -ci --extract-audio --audio-format mp3 $song;
-done
-
-rename 's/-.{11}(?=\.mp3)//g' *.mp3;
-"""
